@@ -83,7 +83,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "小车功能"))
-        self.menuopen.setTitle(_translate("MainWindow", "语音功能"))
+        self.menuopen.setTitle(_translate("MainWindow", "文本功能"))
         self.menumatching.setTitle(_translate("MainWindow", "图像功能"))
         self.menu.setTitle(_translate("MainWindow", "人脸检测"))
         self.Animal.setText(_translate("MainWindow", "动物识别 "))
@@ -92,7 +92,7 @@ class Ui_MainWindow(object):
         self.Car.setText(_translate("MainWindow", "车辆识别"))
         self.openpng.setText(_translate("MainWindow", "png"))
         self.opentif.setText(_translate("MainWindow", "tif"))
-        self.OpenImage.setText(_translate("MainWindow", "openfile"))
+        self.OpenImage.setText(_translate("MainWindow", "文本识别"))
         # self.OpenImage.setShortcut(_translate("MainWindow", "Ctrl+1"))
         self.Exit.setText(_translate("MainWindow", "exit"))
         # self.Exit.setShortcut(_translate("MainWindow", "Ctrl+2"))
@@ -128,15 +128,44 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         # self.f1.append(file)
         # self.statusbar.showMessage(file)
         from text import text81
-        path = r"C:\Users\15845\Pictures\Untitled Diagram (1).png"
-        text81.detect(path)
-        from pprint import pprint
-        pprint(text81.detect(path))
-        data = text81.detect(path)
+
+        # from pprint import pprint
+        # pprint(text81.detect(path))
+        # data = text81.detect(path)
         # for word in range(0, len(data)):
         #     print(data)
-        print(data)
-        self.tt.append(str(data))
+        # print(data)
+
+        cap = cv2.VideoCapture(0)
+        index = 0
+        imgname = 0
+        # 用循环不断获取当前帧 处理后显示出来
+        while True:
+            index = index + 1
+            #   捕获当前帧
+            ret, img = cap.read()
+            #    显示图像
+            cv2.imshow('video', img)
+            #   每5秒保存一张截图
+            if index == 25:
+                imgname = imgname + 1
+                if imgname >= 5:
+                    imgname = 0
+                #           文件名字符串拼接
+                fname = 'text.jpg'
+                #           写入截图
+                cv2.imwrite(fname, img)
+                print(fname + ' saved')
+                img = fname
+                text81.detect(fname)
+                data = text81.detect(fname)
+                self.tt.append(str(data))
+                index = 0
+            if cv2.waitKey(50) & 0xFF == ord('q'):
+                break
+
+        cap.release()
+        cv2.destroyAllWindows()
 
     def exitP(self):
         result=QMessageBox.information(self,"Notice","Are you sure to exit",QMessageBox.StandardButtons(QMessageBox.Yes|QMessageBox.No))
