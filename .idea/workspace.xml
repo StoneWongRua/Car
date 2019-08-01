@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cefae68-5fbe-4d50-87a3-0407d7db3c8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/UsingVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/UsingVar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/audio.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,7 @@
     <SUITE FILE_PATH="coverage/intel$text81__1_.coverage" NAME="text81 (1) Coverage Results" MODIFIED="1564640748751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text" />
     <SUITE FILE_PATH="coverage/intel$text81.coverage" NAME="text81 Coverage Results" MODIFIED="1564639539446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$face.coverage" NAME="face Coverage Results" MODIFIED="1564590090688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face" />
+    <SUITE FILE_PATH="coverage/intel$audio.coverage" NAME="audio Coverage Results" MODIFIED="1564642696468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$UsingVar.coverage" NAME="UsingVar Coverage Results" MODIFIED="1564641421031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1564588443057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$text.coverage" NAME="text Coverage Results" MODIFIED="1564596939409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -26,13 +27,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsingVar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="161" column="39" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
+            <state relative-caret-position="83">
+              <caret line="141" column="16" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
               <folding>
                 <element signature="e#12035#13447#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/animal/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/audio.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,10 +158,11 @@
         <option value="$PROJECT_DIR$/text81.py" />
         <option value="$PROJECT_DIR$/text/text81.py" />
         <option value="$PROJECT_DIR$/UsingVar.py" />
+        <option value="$PROJECT_DIR$/audio.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="746" />
     <option name="width" value="1183" />
     <option name="height" value="1038" />
@@ -161,16 +180,6 @@
             <path>
               <item name="intel" type="b2602c69:ProjectViewProjectNode" />
               <item name="intel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intel" type="462c0819:PsiDirectoryNode" />
-              <item name="animal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="intel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="intel" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.UsingVar">
+  <component name="RunManager" selected="Python.audio">
     <configuration name="UsingVar" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,7 +238,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="animal" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="audio" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,12 +246,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/animal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/animal/animal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/audio.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,11 +328,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.audio" />
         <item itemvalue="Python.UsingVar" />
         <item itemvalue="Python.text81 (1)" />
         <item itemvalue="Python.text81" />
         <item itemvalue="Python.text" />
-        <item itemvalue="Python.animal" />
       </list>
     </recent_temporary>
   </component>
@@ -341,23 +350,23 @@
       <workItem from="1564556866829" duration="6688000" />
       <workItem from="1564593672715" duration="4824000" />
       <workItem from="1564621024743" duration="2840000" />
-      <workItem from="1564630850843" duration="4142000" />
+      <workItem from="1564630850843" duration="5290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21351000" />
+    <option name="totallyTimeSpent" value="22499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="597" y="0" width="946" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.033783782" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7060811" visible="true" weight="0.042979944" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49887386" visible="true" weight="0.3295129" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7060811" weight="0.042979944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -365,7 +374,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928367" weight="0.32884097" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2939189" side_tool="true" visible="true" weight="0.042979944" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011261" side_tool="true" visible="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49498567" weight="0.111859836" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.9068768" weight="0.5471698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -385,9 +394,6 @@
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/animal/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/python-logo@2x.png">
       <provider selected="true" editor-type-id="images" />
@@ -496,10 +502,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UsingVar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="161" column="39" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
+        <state relative-caret-position="83">
+          <caret line="141" column="16" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
           <folding>
             <element signature="e#12035#13447#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animal/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
