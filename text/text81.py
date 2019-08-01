@@ -31,14 +31,16 @@ def detect(path):
     r = requests.post(url=ocr_url, headers=headers, data=data)
 
     # 输出请求结果
-    print('请求码为: %s' % r.status_code)
-    res_words = json.loads(r.content)['words_result'][0]['words']
+    # print('请求码为: %s' % r.status_code)
+    res_words = json.loads(r.content)['words_result']
     result = json.loads(r.content)
-    print('识别结果为: %s' % res_words)
+    # print('识别结果为: %s' % res_words)
+    # pprint(result)
+    # pprint(len(result['words_result']))
     return result['words_result']
 
 
 
-# if __name__ == '__main__':
-#     path = r"C:\Users\15845\Pictures\Untitled Diagram (1).png"
-#     detect(path)
+if __name__ == '__main__':
+    path = r"C:\Users\15845\Pictures\Untitled Diagram (1).png"
+    detect(path)

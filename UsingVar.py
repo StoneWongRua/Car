@@ -124,9 +124,20 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
 
     def open(self):
-        file,ok=QFileDialog.getOpenFileName(self,"打开",None,"*.jpg;;*.png;;*.tif;;*.bmp")
-        self.f1.append(file)
-        self.statusbar.showMessage(file)
+        # file,ok=QFileDialog.getOpenFileName(self,"打开",None,"*.jpg;;*.png;;*.tif;;*.bmp")
+        # self.f1.append(file)
+        # self.statusbar.showMessage(file)
+        from text import text81
+        path = r"C:\Users\15845\Pictures\Untitled Diagram (1).png"
+        text81.detect(path)
+        from pprint import pprint
+        pprint(text81.detect(path))
+        data = text81.detect(path)
+        # for word in range(0, len(data)):
+        #     print(data)
+        print(data)
+        self.tt.append(str(data))
+
     def exitP(self):
         result=QMessageBox.information(self,"Notice","Are you sure to exit",QMessageBox.StandardButtons(QMessageBox.Yes|QMessageBox.No))
         if result==QMessageBox.Yes:
@@ -364,13 +375,8 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
 
 if __name__=="__main__":
-    # import sys
-    # app=QtWidgets.QApplication(sys.argv)
-    # window=mywindow()
-    # window.show()
-    # app.exec_()
-    from text import text81
-    path = r"C:\Users\15845\Pictures\Untitled Diagram (1).png"
-    text81.detect(path)
-    from pprint import pprint
-    pprint(text81.detect(path))
+    import sys
+    app=QtWidgets.QApplication(sys.argv)
+    window=mywindow()
+    window.show()
+    app.exec_()
