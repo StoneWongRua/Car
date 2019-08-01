@@ -364,8 +364,13 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
 
 if __name__=="__main__":
-    import sys
-    app=QtWidgets.QApplication(sys.argv)
-    window=mywindow()
-    window.show()
-    app.exec_()
+    # import sys
+    # app=QtWidgets.QApplication(sys.argv)
+    # window=mywindow()
+    # window.show()
+    # app.exec_()
+    from text import text81
+    path = r"C:\Users\15845\Pictures\Untitled Diagram (1).png"
+    text81.detect(path)
+    from pprint import pprint
+    pprint(text81.detect(path))
