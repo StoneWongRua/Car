@@ -1,11 +1,6 @@
 import cv2
 
-
-def track_back(x):
-    pass
-
-
-img = cv2.imread('zhuyin.jpeg', 1)
+img = cv2.imread('desk.png', 1)
 cv2.namedWindow('window')
 
 # 创建滑动条
@@ -19,7 +14,6 @@ while(True):
 
     edges = cv2.Canny(img, min_val, max_val)
     cv2.imshow('window', edges)
-
     # 按下ESC键退出
     if cv2.waitKey(30) == 27:
         break

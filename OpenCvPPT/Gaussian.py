@@ -5,11 +5,7 @@
 import numpy as np
 import cv2
 
-image = cv2.imread('zhuyin.jpeg',0)
-#image = cv2.resize(cv2.cvtColor(image,cv2.COLOR_BGR2RGB),(100,100))
-
-pepper = cv2.imread("pepper.png")
-# pepper = cv2.resize(cv2.cvtColor(pepper,cv2.COLOR_BGR2RGB),(200,200))
+image = cv2.imread("pepper.png", 0)
 
 
 

@@ -35,11 +35,26 @@ class CarRecognizer(object):
     def detect(self, img_path):
         f = open(img_path, 'rb')
         img_str = base64.b64encode(f.read())
-        params = {'image': img_str, 'with_face': 1}
+        params = {'image': img_str, 'baike_num': 1}
         tic = time.clock()
         rp_json = self.get_result(params)
         toc = time.clock()
         print('=> Cost time: ', toc - tic)
         result = rp_json['result']
         print(result)
-        return str(result[0])
+        if str(result[0]['name']) == "非车类":
+            return "这并不是一台车\n" \
+                   + "--------------------------------------------------"
+        if str(result[0]['year']) == "无年份信息":
+            # return "这是" + str ( result[0]['name'] ) + "吗？" + "听说" + str (
+            #             #     result[0]['baike_info']['description'] ) + "\n"\
+            return "年份信息：无"+ \
+                   "--------------------------------------------------"
+        else:
+            return "这是" + str ( result[0]['year'] ) +"年生产的" + \
+                   str ( result[0]['name'] ) + "吗？" + "听说" + str ( result[0]['baike_info']['description'] ) + "\n"\
+                   + "--------------------------------------------------"
+
+
+if __name__ == '__main__':
+    print(CarRecognizer.detect(img_path="car.jpg"))

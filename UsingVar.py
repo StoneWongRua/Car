@@ -2,6 +2,18 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 import json
 import base64
+
+from PyQt5 import  QtWidgets,QtGui,QtCore
+from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTextEdit
+import cv2
+import numpy as np
+from skimage import exposure
+import face
+from face import facev2
+from animal import animal
+from flower import flower
+from car import car
+
 IS_PY3 = sys.version_info.major == 3
 if IS_PY3:
     from urllib.request import urlopen
@@ -13,9 +25,10 @@ else:
     print("wrong")
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
+
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(231, 75)
-        MainWindow.setGeometry(300, 300, 550, 350)
+        MainWindow.setGeometry(346, 58, 1124, 896)
         font = QtGui.QFont()
         font.setFamily("Arial Black")
         font.setPointSize(12)
@@ -25,15 +38,21 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         MainWindow.setCentralWidget(self.centralwidget)
+
+
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 231, 29))
         self.menubar.setObjectName("menubar")
+
         self.menuopen = QtWidgets.QMenu(self.menubar)
         self.menuopen.setObjectName("menuopen")
         self.menumatching = QtWidgets.QMenu(self.menubar)
         self.menumatching.setObjectName("menumatching")
+        self.menuaudio = QtWidgets.QMenu(self.menubar)
+        self.menuaudio.setObjectName("menuaudio")
         self.menu = QtWidgets.QMenu(self.menubar)
         self.menu.setObjectName("menu")
+
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -54,16 +73,29 @@ class Ui_MainWindow(object):
         self.Flower.setObjectName("Flower")
         self.Car = QtWidgets.QAction(MainWindow)
         self.Car.setObjectName("Car")
+
         self.openpng = QtWidgets.QAction(MainWindow)
         self.openpng.setObjectName("openpng")
         self.opentif = QtWidgets.QAction(MainWindow)
         self.opentif.setObjectName("opentif")
         self.OpenImage = QtWidgets.QAction(MainWindow)
         self.OpenImage.setObjectName("OpenImage")
+
         self.Exit = QtWidgets.QAction(MainWindow)
         self.Exit.setObjectName("Exit")
+
+        self.Audio = QtWidgets.QAction(MainWindow)
+        self.Audio.setObjectName("Audio")
+
+        self.Weather = QtWidgets.QAction(MainWindow)
+        self.Weather.setObjectName("Weather")
+
+        self.Translate = QtWidgets.QAction(MainWindow)
+        self.Translate.setObjectName("Translate")
+
         self.actionRecognize = QtWidgets.QAction(MainWindow)
         self.actionRecognize.setObjectName("actionRecognize")
+
         self.menuopen.addAction(self.OpenImage)
         self.menuopen.addSeparator()
         self.menuopen.addAction(self.Exit)
@@ -72,19 +104,27 @@ class Ui_MainWindow(object):
         self.menumatching.addAction(self.Face)
         self.menumatching.addAction(self.Flower)
         self.menumatching.addAction(self.Car)
+        self.menuaudio.addSeparator()
+        self.menuaudio.addAction(self.Audio)
+        self.menuaudio.addAction ( self.Weather )
+        self.menuaudio.addAction ( self.Translate )
         self.menu.addAction(self.actionRecognize)
         self.menubar.addAction(self.menuopen.menuAction())
         self.menubar.addAction(self.menumatching.menuAction())
         self.menubar.addAction(self.menu.menuAction())
+        self.menubar.addAction(self.menuaudio.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "小车功能"))
         self.menuopen.setTitle(_translate("MainWindow", "文本功能"))
         self.menumatching.setTitle(_translate("MainWindow", "图像功能"))
+        self.menuaudio.setTitle(_translate("MainWindow", "语音功能"))
         self.menu.setTitle(_translate("MainWindow", "人脸检测"))
         self.Animal.setText(_translate("MainWindow", "动物识别 "))
         self.Face.setText(_translate("MainWindow", "人脸识别"))
@@ -92,22 +132,17 @@ class Ui_MainWindow(object):
         self.Car.setText(_translate("MainWindow", "车辆识别"))
         self.openpng.setText(_translate("MainWindow", "png"))
         self.opentif.setText(_translate("MainWindow", "tif"))
+        self.Audio.setText(_translate("MainWindow", "语音转文字"))
+        self.Weather.setText(_translate("MainWindow", "天气预报"))
+        self.Translate.setText ( _translate ( "MainWindow", "语音翻译" ) )
         self.OpenImage.setText(_translate("MainWindow", "文本识别"))
+
         # self.OpenImage.setShortcut(_translate("MainWindow", "Ctrl+1"))
         self.Exit.setText(_translate("MainWindow", "exit"))
         # self.Exit.setShortcut(_translate("MainWindow", "Ctrl+2"))
         self.actionRecognize.setText(_translate("MainWindow", "Recognize"))
 
-from PyQt5 import  QtWidgets,QtGui,QtCore
-from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTextEdit
-import cv2
-import numpy as np
-from skimage import exposure
-import face
-from face import facev2
-from animal import animal
-from flower import flower
-from car import car
+
 
 class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
     def __init__(self):
@@ -121,12 +156,18 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         self.actionRecognize.triggered.connect(self.recognize)
         self.Flower.triggered.connect(self.mflower)
         self.Car.triggered.connect(self.mcar)
+        self.Audio.triggered.connect(self.maudio)
+        self.Weather.triggered.connect(self.mweather)
+        self.Translate.triggered.connect(self.mtranslate)
+
+        self._mutex = QtCore.QMutex ()
 
 
     def open(self):
         # file,ok=QFileDialog.getOpenFileName(self,"打开",None,"*.jpg;;*.png;;*.tif;;*.bmp")
         # self.f1.append(file)
         # self.statusbar.showMessage(file)
+        self._mutex.lock ()
         from text import text81
 
         # from pprint import pprint
@@ -166,14 +207,18 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         cap.release()
         cv2.destroyAllWindows()
+        self._mutex.unlock ()
 
     def exitP(self):
+        self._mutex.lock ()
         result=QMessageBox.information(self,"Notice","Are you sure to exit",QMessageBox.StandardButtons(QMessageBox.Yes|QMessageBox.No))
         if result==QMessageBox.Yes:
             self.close()
+            self._mutex.unlock ()
 
 
     def manimal(self):
+        self._mutex.lock ()
         recognizer = animal.AnimalRecognizer(api_key='PtGR84MlaNQL6KLPeB73A4Xd', secret_key='Ze0KrGXEtyLykKAMbAn09xRWIfXsTjmc')
         cap = cv2.VideoCapture(0)
         index = 0
@@ -204,9 +249,11 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         cap.release()
         cv2.destroyAllWindows()
+        self._mutex.unlock ()
 
 
     def mface(self):
+        self._mutex.lock ()
         cap = cv2.VideoCapture(0)
         index = 0
         imgname = 0
@@ -276,9 +323,11 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         cap.release()
         cv2.destroyAllWindows()
+        self._mutex.unlock ()
 
 
     def recognize(self):
+        self._mutex.lock ()
         face=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         face.load(r'C:\Users\15845\.ipython\cv2\data\haarcascade_frontalface_default.xml')
         cap=cv2.VideoCapture(0)
@@ -295,9 +344,11 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
             if k==27:
                 break
         cv2.destroyAllWindows()
+        self._mutex.unlock ()
 
 
     def mflower(self):
+        self._mutex.lock ()
         recognizer = flower.PlantRecognizer(api_key='PtGR84MlaNQL6KLPeB73A4Xd', secret_key='Ze0KrGXEtyLykKAMbAn09xRWIfXsTjmc')
         cap = cv2.VideoCapture(0)
         index = 0
@@ -328,9 +379,11 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         cap.release()
         cv2.destroyAllWindows()
+        self._mutex.unlock ()
 
 
     def mcar(self):
+        self._mutex.lock ()
         recognizer = car.CarRecognizer(api_key='PtGR84MlaNQL6KLPeB73A4Xd',
                                      secret_key='Ze0KrGXEtyLykKAMbAn09xRWIfXsTjmc')
         cap = cv2.VideoCapture(0)
@@ -362,6 +415,8 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         cap.release()
         cv2.destroyAllWindows()
+        self._mutex.unlock ()
+
 
     def matchIMG(self,im1,im2,kp1,kp2,des1,des2):
         FLANN_INDEX_KDTREE=0
@@ -403,9 +458,40 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         return im3
 
 
+    def maudio(self):
+        path = r'C:\Users\15845\Pictures\intel\audio\music\sample-files\16k.wav'
+        from audio import SpeechRecognition
+        self.tt.append ( SpeechRecognition.test ( path ) )
+        result = SpeechRecognition.test ( path )
+        return result
+
+    def mweather(self):
+        self._mutex.lock ()
+        from audio import weather
+        # print(self.maudio())
+        from audio import SpeechRecognition
+        path = r'C:\Users\15845\Pictures\intel\audio\music\sample-files\16k.wav'
+        result = SpeechRecognition.test ( path )
+        if SpeechRecognition.weather(path):
+            self.tt.append ( weather.weather_analyse ( "auto_ip" ) )
+        else:
+            print('wrong')
+        self._mutex.unlock ()
+
+    def mtranslate(self):
+        from audio import youdao
+        app_key_data = {'key': '61555165', 'keyfrom': 'pythoncontent1111'}
+        m = youdao.youdao_fanyi ( app_key_data )
+        m.analysis_json ()
+        self.tt.append (str(m.analysis_json ()))
+
+
+
+
 if __name__=="__main__":
     import sys
     app=QtWidgets.QApplication(sys.argv)
     window=mywindow()
     window.show()
     app.exec_()
+

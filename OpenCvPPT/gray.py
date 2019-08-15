@@ -1,6 +1,6 @@
 import cv2
 
-cat = cv2.imread('cat.jpg') # 读取一张图片
+cat = cv2.imread('cat.png') # 读取一张图片
 gray = cv2.cvtColor(cat, cv2.COLOR_BGR2GRAY) # 转换为灰度图
 
 cv2.imshow("cat", cat) # 显示原图

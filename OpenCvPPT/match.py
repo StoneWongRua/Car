@@ -1,39 +1,36 @@
-# 导入所需库文件
 import cv2
-import numpy as np
 
-# 加载原始RGB图像
-img_rgb = cv2.imread("bw.png")
+# 读取目标图片
+target = cv2.imread("bw.png")
 
-# 创建一个原始图像的灰度版本
-# 所有操作在灰度版本中处理
-# 然后在RGB图像中使用相同坐标还原
+# 读取模板图片
+template = cv2.imread("moon.png")
 
-img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
+# 获得模板图片的高宽尺寸
+theight, twidth = template.shape[:2]
 
-# 加载将要搜索的图像模板
-template = cv2.imread('moon.png',0)
+# 执行模板匹配，采用的匹配方式cv2.TM_SQDIFF_NORMED
+result = cv2.matchTemplate(target,template,cv2.TM_SQDIFF_NORMED)
 
-# 记录图像模板的尺寸
-w, h = template.shape[::-1]
+# 归一化处理
+cv2.normalize( result, result, 0, 1, cv2.NORM_MINMAX, -1 )
 
-# 使用matchTemplate对原始灰度图像和图像模板进行匹配
-res = cv2.matchTemplate(img_gray,template,cv2.TM_CCOEFF_NORMED)
+# 寻找矩阵（一维数组当做向量，用Mat定义）中的最大值和最小值的匹配结果及其位置
+min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
 
+# 匹配值转换为字符串
+# 对于cv2.TM_SQDIFF及cv2.TM_SQDIFF_NORMED方法min_val越趋近与0匹配度越好，匹配位置取min_loc
+# 对于其他方法max_val越趋近于1匹配度越好，匹配位置取max_loc
+strmin_val = str(min_val)
 
-# 设定阈值
-threshold = 0.7
-# res大于70%
-loc = np.where(res >= threshold)
+# 绘制矩形边框，将匹配区域标注出来
+# min_loc：矩形定点
+# (min_loc[0]+twidth,min_loc[1]+theight)：矩形的宽高
+# (255,172,0)：矩形的边框颜色；4：矩形边框宽度
+cv2.rectangle(target,min_loc,(min_loc[0]+twidth,min_loc[1]+theight),(255,172,0),4)
 
-# 使用灰度图像中的坐标对原始RGB图像进行标记
-for pt in zip(*loc[::-1]):
-    cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (255,  255, 0), 5)
-
-# 显示图像
-cv2.imshow('Detected',img_rgb)
-cv2.waitKey(0)
+# 显示结果,并将匹配值显示在标题栏上
+cv2.imshow(strmin_val,target)
+cv2.waitKey()
 cv2.destroyAllWindows()
-
-
 

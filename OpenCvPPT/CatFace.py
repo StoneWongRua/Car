@@ -29,8 +29,6 @@ def cat1():
 
 # 定义一个有参函数
 def cat(path):
-    # -*- coding=utf-8 -*-
-    import cv2
     # 加载猫脸检测器
     catPath = "C:\ProgramData\Miniconda3\Lib\opencv\opencv\data\haarcascades\haarcascade_frontalcatface.xml"
     faceCascade = cv2.CascadeClassifier(catPath)

@@ -25,10 +25,13 @@ OpenCV 中的 Canny 边界检测
 '''
 import cv2
 
-img = cv2.imread('zhuyin.jpeg')
+img = cv2.imread('desk.png', 1)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray, 75, 200)
 
+
+cv2.namedWindow("Edges",0)
+cv2.resizeWindow("Edges", 400, 350)
 cv2.imshow('Edges',edges)
 cv2.waitKey(0)
 
