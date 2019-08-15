@@ -2,6 +2,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 import json
 import base64
+from PIL import Image
 
 from PyQt5 import  QtWidgets,QtGui,QtCore
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTextEdit
@@ -81,8 +82,13 @@ class Ui_MainWindow(object):
         self.OpenImage = QtWidgets.QAction(MainWindow)
         self.OpenImage.setObjectName("OpenImage")
 
+        self.IDCard = QtWidgets.QAction(MainWindow)
+        self.IDCard.setObjectName("IDCard")
+
         self.Exit = QtWidgets.QAction(MainWindow)
         self.Exit.setObjectName("Exit")
+
+
 
         self.Audio = QtWidgets.QAction(MainWindow)
         self.Audio.setObjectName("Audio")
@@ -97,8 +103,10 @@ class Ui_MainWindow(object):
         self.actionRecognize.setObjectName("actionRecognize")
 
         self.menuopen.addAction(self.OpenImage)
+        self.menuopen.addAction(self.IDCard)
         self.menuopen.addSeparator()
         self.menuopen.addAction(self.Exit)
+
         self.menumatching.addSeparator()
         self.menumatching.addAction(self.Animal)
         self.menumatching.addAction(self.Face)
@@ -136,11 +144,11 @@ class Ui_MainWindow(object):
         self.Weather.setText(_translate("MainWindow", "天气预报"))
         self.Translate.setText ( _translate ( "MainWindow", "语音翻译" ) )
         self.OpenImage.setText(_translate("MainWindow", "文本识别"))
-
+        self.IDCard.setText ( _translate ( "MainWindow", "身份证识别" ) )
         # self.OpenImage.setShortcut(_translate("MainWindow", "Ctrl+1"))
         self.Exit.setText(_translate("MainWindow", "exit"))
         # self.Exit.setShortcut(_translate("MainWindow", "Ctrl+2"))
-        self.actionRecognize.setText(_translate("MainWindow", "Recognize"))
+        self.actionRecognize.setText(_translate("MainWindow", "表情包"))
 
 
 
@@ -159,6 +167,7 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         self.Audio.triggered.connect(self.maudio)
         self.Weather.triggered.connect(self.mweather)
         self.Translate.triggered.connect(self.mtranslate)
+        self.IDCard.triggered.connect ( self.midcard )
 
         self._mutex = QtCore.QMutex ()
 
@@ -332,22 +341,74 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
     def recognize(self):
         self._mutex.lock ()
-        face=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-        face.load(r'C:\Users\15845\.ipython\cv2\data\haarcascade_frontalface_default.xml')
-        cap=cv2.VideoCapture(0)
-        self.statusbar.showMessage("若想退出人脸识别视频流，则需要按下键盘的Esc键")
-        while 1:
-            ret,frame=cap.read()
-            frame=exposure.adjust_gamma(frame,0.5)
-            grayframe=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-            faces=face.detectMultiScale(grayframe,1.3,5)
-            for (x,y,w,h) in faces:
-                cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
-            cv2.imshow('img',frame)
-            k=cv2.waitKey(10)
-            if k==27:
-                break
-        cv2.destroyAllWindows()
+        # face=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+        # face.load(r'C:\Users\15845\.ipython\cv2\data\haarcascade_frontalface_default.xml')
+        # cap=cv2.VideoCapture(0)
+        # self.statusbar.showMessage("若想退出人脸识别视频流，则需要按下键盘的Esc键")
+        # while 1:
+        #     ret,frame=cap.read()
+        #     frame=exposure.adjust_gamma(frame,0.5)
+        #     grayframe=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+        #     faces=face.detectMultiScale(grayframe,1.3,5)
+        #     for (x,y,w,h) in faces:
+        #         cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
+        #     cv2.imshow('img',frame)
+        #     k=cv2.waitKey(10)
+        #     if k==27:
+        #         break
+        # cv2.destroyAllWindows()
+        self.statusbar.showMessage ( "若想退出人脸识别视频流，则需要按下键盘的Esc键" )
+        maskPath = "mask.png"
+        cascPath = r'C:\Users\15845\.ipython\cv2\data\haarcascade_frontalface_default.xml'
+
+        # 构建分类器
+        faceCascade = cv2.CascadeClassifier ( cascPath )
+
+        # 以pil形式打开
+        mask = Image.open ( maskPath )
+
+        def thug_mask(image):
+
+            # 把读取到的帧转换成灰度图，正如我们任务一中提到的脸部检测那样
+            gray = cv2.cvtColor ( image, cv2.COLOR_BGR2GRAY )
+            faces = faceCascade.detectMultiScale ( gray, 1.15 )
+            # 把帧转换成pil图片
+            background = Image.fromarray ( image )
+
+            for (x, y, w, h) in faces:
+                # 实时变化面具大小
+                resized_mask = mask.resize ( (w, h), Image.ANTIALIAS )
+                offset = (x, y)
+                # 把面具放在图像上
+                background.paste ( resized_mask, offset, mask=resized_mask )
+
+            # 返回帧
+            return np.asarray ( background )
+
+        cap = cv2.VideoCapture ( 0 )
+        # cap = cv2.VideoCapture(0)
+        cap.set ( 3, 320 )
+        cap.set ( 4, 240 )
+
+        while True:
+            ret, frame = cap.read ()
+            if ret == True:
+                gray = cv2.cvtColor ( frame, cv2.COLOR_BGR2GRAY )
+                faces = faceCascade.detectMultiScale ( gray, 1.15 )
+                background = Image.fromarray ( frame )
+                for (x, y, w, h) in faces:
+                    resized_mask = mask.resize ( (w, h), Image.ANTIALIAS )
+                    offset = (x, y)
+                    background.paste ( resized_mask, offset, mask=resized_mask )
+                frame = np.asarray ( background )
+                cv2.imshow ( 'Live', frame )
+
+                if cv2.waitKey ( 1 ) == 27:
+                    break
+
+        cap.release ()
+
+        cv2.destroyAllWindows ()
         self._mutex.unlock ()
 
 
@@ -370,7 +431,7 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
                 if imgname >= 5:
                     imgname = 0
                 #           文件名字符串拼接
-                fname = 'animal.jpg'
+                fname = 'flower.jpg'
                 #           写入截图
                 cv2.imwrite(fname, img)
                 print(fname + ' saved')
@@ -488,6 +549,48 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         m = youdao.youdao_fanyi ( app_key_data )
         m.analysis_json ()
         self.tt.append (str(m.analysis_json ()))
+
+
+
+    def midcard(self):
+        self._mutex.lock ()
+        from text import idcard
+        cap = cv2.VideoCapture ( 0 )
+        index = 0
+        imgname = 0
+        # 用循环不断获取当前帧 处理后显示出来
+        while True:
+            index = index + 1
+            #   捕获当前帧
+            ret, img = cap.read ()
+            #    显示图像
+            cv2.imshow ( 'video', img )
+            #   每5秒保存一张截图
+            if index == 25:
+                imgname = imgname + 1
+                if imgname >= 5:
+                    imgname = 0
+                #           文件名字符串拼接
+                fname = 'idcard.jpg'
+                #           写入截图
+                cv2.imwrite ( fname, img )
+                print ( fname + ' saved' )
+                img = fname
+
+                result = idcard.IDCardRecognizer ( api_key='xXDugOa8S6GpMHfPK4OrXotZ',
+                                                   secret_key='yzZps0FwcYVuigpB6SVz8mI6Q0DwZIhs' ).detect ( img )
+                if str ( result ) != "None":
+                    self.tt.append ( str ( result ) )
+                else:
+                    self.tt.append ( "检测不到身份证\n--------------------------------------\n" )
+
+                index = 0
+            if cv2.waitKey ( 50 ) & 0xFF == ord ( 'q' ):
+                break
+
+        cap.release ()
+        cv2.destroyAllWindows ()
+        self._mutex.unlock ()
 
 
 

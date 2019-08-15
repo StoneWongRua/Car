@@ -6,44 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cefae68-5fbe-4d50-87a3-0407d7db3c8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/camshift.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/face.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/lk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/mario.flv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/meanshift.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/out.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/playvideo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/st.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/thuglife_cam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/thuglife_photo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenCvPPT/twins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/SpeechRecognition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/weather.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/audio/youdao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main815.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testMain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/youdao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main1609.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/idcard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/CatFace.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/CatFace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/Gaussian.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/Gaussian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/canny.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/canny.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/canny_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/canny_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/gray.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/gray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/match.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/match.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/match2.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/match2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCvPPT/sobel.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCvPPT/sobel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsingVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/UsingVar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main815.py" beforeDir="false" afterPath="$PROJECT_DIR$/main815.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,17 +24,19 @@
     <SUITE FILE_PATH="coverage/intel$text81__1_.coverage" NAME="text81 (1) Coverage Results" MODIFIED="1564640748751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text" />
     <SUITE FILE_PATH="coverage/intel$face.coverage" NAME="face Coverage Results" MODIFIED="1564590090688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face" />
     <SUITE FILE_PATH="coverage/intel$match2.coverage" NAME="match2 Coverage Results" MODIFIED="1565677633677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
-    <SUITE FILE_PATH="coverage/intel$main815.coverage" NAME="main815 Coverage Results" MODIFIED="1565835467091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/intel$main815.coverage" NAME="main815 Coverage Results" MODIFIED="1565858169234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$audio.coverage" NAME="audio Coverage Results" MODIFIED="1565776855279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/intel$idcard.coverage" NAME="idcard Coverage Results" MODIFIED="1565858161816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text" />
     <SUITE FILE_PATH="coverage/intel$CatFace.coverage" NAME="CatFace Coverage Results" MODIFIED="1565253552139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1564588443057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$numpy.coverage" NAME="numpy Coverage Results" MODIFIED="1565665191417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$pedestrain_video.coverage" NAME="pedestrain_video Coverage Results" MODIFIED="1565256586483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$facev2.coverage" NAME="facev2 Coverage Results" MODIFIED="1564592122104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face" />
-    <SUITE FILE_PATH="coverage/intel$match_5.coverage" NAME="match_5 Coverage Results" MODIFIED="1565597219788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
+    <SUITE FILE_PATH="coverage/intel$match_5.coverage" NAME="match_5 Coverage Results" MODIFIED="1565853189218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$playvideo.coverage" NAME="playvideo Coverage Results" MODIFIED="1565687327934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$video__1_.coverage" NAME="video (1) Coverage Results" MODIFIED="1565687031950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$b.coverage" NAME="b Coverage Results" MODIFIED="1565776184618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/audio" />
+    <SUITE FILE_PATH="coverage/intel$main1609.coverage" NAME="main1609 Coverage Results" MODIFIED="1565856507199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$gray.coverage" NAME="gray Coverage Results" MODIFIED="1565679167585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$youdao.coverage" NAME="youdao Coverage Results" MODIFIED="1565837383536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$text.coverage" NAME="text Coverage Results" MODIFIED="1564596939409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -75,63 +44,120 @@
     <SUITE FILE_PATH="coverage/intel$testMain.coverage" NAME="testMain Coverage Results" MODIFIED="1565771614627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$match.coverage" NAME="match Coverage Results" MODIFIED="1565677626488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$match_4.coverage" NAME="match_4 Coverage Results" MODIFIED="1565593215432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
-    <SUITE FILE_PATH="coverage/intel$thuglife_cam.coverage" NAME="thuglife_cam Coverage Results" MODIFIED="1565690799148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$c.coverage" NAME="c Coverage Results" MODIFIED="1565773557620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/audio" />
-    <SUITE FILE_PATH="coverage/intel$text81.coverage" NAME="text81 Coverage Results" MODIFIED="1564639539446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/intel$thuglife_cam.coverage" NAME="thuglife_cam Coverage Results" MODIFIED="1565853601688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
+    <SUITE FILE_PATH="coverage/intel$text81.coverage" NAME="text81 Coverage Results" MODIFIED="1565854906093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text" />
     <SUITE FILE_PATH="coverage/intel$sobel.coverage" NAME="sobel Coverage Results" MODIFIED="1565680162038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
-    <SUITE FILE_PATH="coverage/intel$UsingVar.coverage" NAME="UsingVar Coverage Results" MODIFIED="1565838522576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/intel$canny.coverage" NAME="canny Coverage Results" MODIFIED="1565678353827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
+    <SUITE FILE_PATH="coverage/intel$UsingVar.coverage" NAME="UsingVar Coverage Results" MODIFIED="1565859513740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/intel$canny.coverage" NAME="canny Coverage Results" MODIFIED="1565852033708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$audio__1_.coverage" NAME="audio (1) Coverage Results" MODIFIED="1565753855159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/audio/audio" />
     <SUITE FILE_PATH="coverage/intel$camshift.coverage" NAME="camshift Coverage Results" MODIFIED="1565681430612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
+    <SUITE FILE_PATH="coverage/intel$lk.coverage" NAME="lk Coverage Results" MODIFIED="1565853454554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$weather.coverage" NAME="weather Coverage Results" MODIFIED="1565834833689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/audio" />
     <SUITE FILE_PATH="coverage/intel$surf.coverage" NAME="surf Coverage Results" MODIFIED="1565311050245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
-    <SUITE FILE_PATH="coverage/intel$canny_2.coverage" NAME="canny_2 Coverage Results" MODIFIED="1565678472176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
+    <SUITE FILE_PATH="coverage/intel$canny_2.coverage" NAME="canny_2 Coverage Results" MODIFIED="1565852489710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$addGasuss.coverage" NAME="addGasuss Coverage Results" MODIFIED="1565314500599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$pepper.coverage" NAME="pepper Coverage Results" MODIFIED="1565312440790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$resizeBW.coverage" NAME="resizeBW Coverage Results" MODIFIED="1565575368319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
-    <SUITE FILE_PATH="coverage/intel$st.coverage" NAME="st Coverage Results" MODIFIED="1565689678073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$a.coverage" NAME="a Coverage Results" MODIFIED="1565772303488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/audio" />
+    <SUITE FILE_PATH="coverage/intel$flower.coverage" NAME="flower Coverage Results" MODIFIED="1565849401564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flower" />
+    <SUITE FILE_PATH="coverage/intel$st.coverage" NAME="st Coverage Results" MODIFIED="1565853748237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$match_3.coverage" NAME="match_3 Coverage Results" MODIFIED="1565597230865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$Gaussian.coverage" NAME="Gaussian Coverage Results" MODIFIED="1565680076232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$car.coverage" NAME="car Coverage Results" MODIFIED="1565829660805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car" />
     <SUITE FILE_PATH="coverage/intel$video.coverage" NAME="video Coverage Results" MODIFIED="1565681277444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/car/car.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="306">
+                    <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+                    <folding>
+                      <element signature="e#0#9#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UsingVar.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text/idcard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="479" lean-forward="true" selection-start-line="479" selection-end-line="479" />
+            <state relative-caret-position="158">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
-                <element signature="e#5804#7165#0" />
-                <element signature="e#7198#7447#0" />
-                <element signature="e#7483#8544#0" />
-                <element signature="e#8578#11084#0" />
-                <element signature="e#11122#11891#0" />
-                <element signature="e#11927#12987#0" />
-                <element signature="e#13020#14109#0" />
-                <element signature="e#13719#15131#0" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/audio/youdao.py">
+        <entry file="file://$PROJECT_DIR$/main815.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+            <state relative-caret-position="90">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="6" selection-end-column="96" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/audio/SpeechRecognition.py">
+        <entry file="file://$PROJECT_DIR$/text/text81.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="23" column="87" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="87" />
+            <state relative-caret-position="71">
+              <caret line="14" column="62" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenCvPPT/thuglife_cam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UsingVar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="111" column="46" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
+              <folding>
+                <element signature="e#6375#7825#0" />
+                <element signature="e#6375#6457#0" />
+                <element signature="e#6601#6628#0" />
+                <element signature="e#6929#7740#0" />
+                <element signature="e#7856#8107#0" />
+                <element signature="e#8141#9204#0" />
+                <element signature="e#9236#11843#0" />
+                <element signature="e#11879#14481#0" />
+                <element signature="e#14515#15577#0" />
+                <element signature="e#15608#16699#0" />
+                <element signature="e#16760#18172#0" />
+                <element signature="e#18205#18451#0" />
+                <element signature="e#18485#18927#0" />
+                <element signature="e#18963#19187#0" />
+                <element signature="e#20206#21300#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,14 +209,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/helloworld.py" />
-        <option value="$PROJECT_DIR$/main/main.py" />
         <option value="$PROJECT_DIR$/face/facev2.py" />
-        <option value="$PROJECT_DIR$/animal/animal.py" />
         <option value="$PROJECT_DIR$/text.py" />
-        <option value="$PROJECT_DIR$/flower/flower.py" />
         <option value="$PROJECT_DIR$/text81.py" />
-        <option value="$PROJECT_DIR$/text/text81.py" />
         <option value="$PROJECT_DIR$/face/face.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/CatFaceVideo.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/FaceVideo.py" />
@@ -200,7 +221,6 @@
         <option value="$PROJECT_DIR$/OpenCvPPT/addGasuss.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/resizeBW.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/match_4.py" />
-        <option value="$PROJECT_DIR$/OpenCvPPT/match_5.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/match_3.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/numpy.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/match.py" />
@@ -208,13 +228,11 @@
         <option value="$PROJECT_DIR$/OpenCvPPT/canny.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/gray.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/CatFace.py" />
-        <option value="$PROJECT_DIR$/OpenCvPPT/canny_2.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/Gaussian.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/sobel.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/camshift.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/meanshift.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/video.py" />
-        <option value="$PROJECT_DIR$/OpenCvPPT/playvideo.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/st.py" />
         <option value="$PROJECT_DIR$/OpenCvPPT/thuglife_cam.py" />
         <option value="$PROJECT_DIR$/audio/audio/audio.py" />
@@ -227,17 +245,25 @@
         <option value="$PROJECT_DIR$/machine_translation/machine_translation_bing.py" />
         <option value="$PROJECT_DIR$/audio/a.py" />
         <option value="$PROJECT_DIR$/main.pyi" />
-        <option value="$PROJECT_DIR$/main815.py" />
         <option value="$PROJECT_DIR$/audio/weather.py" />
-        <option value="$PROJECT_DIR$/car/car.py" />
         <option value="$PROJECT_DIR$/youdao.py" />
         <option value="$PROJECT_DIR$/audio/SpeechRecognition.py" />
-        <option value="$PROJECT_DIR$/UsingVar.py" />
         <option value="$PROJECT_DIR$/audio/youdao.py" />
+        <option value="$PROJECT_DIR$/car/car.py" />
+        <option value="$PROJECT_DIR$/flower/flower.py" />
+        <option value="$PROJECT_DIR$/animal/animal.py" />
+        <option value="$PROJECT_DIR$/OpenCvPPT/canny_2.py" />
+        <option value="$PROJECT_DIR$/OpenCvPPT/match_5.py" />
+        <option value="$PROJECT_DIR$/OpenCvPPT/playvideo.py" />
+        <option value="$PROJECT_DIR$/text/text81.py" />
+        <option value="$PROJECT_DIR$/main1609.py" />
+        <option value="$PROJECT_DIR$/main815.py" />
+        <option value="$PROJECT_DIR$/text/idcard.py" />
+        <option value="$PROJECT_DIR$/UsingVar.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -258,7 +284,12 @@
             <path>
               <item name="intel" type="b2602c69:ProjectViewProjectNode" />
               <item name="intel" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intel" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,7 +349,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="car" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="idcard" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,12 +357,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/car" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car/car.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text/idcard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main1609" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="intel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main1609.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,7 +415,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="weather" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="text81" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,34 +423,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/audio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/audio/weather.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="youdao" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="intel" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/youdao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text/text81.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -409,10 +440,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.UsingVar" />
-        <item itemvalue="Python.youdao" />
         <item itemvalue="Python.main815" />
-        <item itemvalue="Python.weather" />
-        <item itemvalue="Python.car" />
+        <item itemvalue="Python.idcard" />
+        <item itemvalue="Python.main1609" />
+        <item itemvalue="Python.text81" />
       </list>
     </recent_temporary>
   </component>
@@ -434,7 +465,7 @@
       <workItem from="1565233473350" duration="4214000" />
       <workItem from="1565250607193" duration="28802000" />
       <workItem from="1565572498930" duration="37787000" />
-      <workItem from="1565742688991" duration="38557000" />
+      <workItem from="1565742688991" duration="52069000" />
     </task>
     <task id="LOCAL-00001" summary="课程内容修改">
       <created>1565656940332</created>
@@ -443,23 +474,37 @@
       <option name="project" value="LOCAL" />
       <updated>1565656940332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="杂七杂八，给小车添加的语音相关的功能">
+      <created>1565839031569</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565839031570</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改输出显示">
+      <created>1565855603352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565855603378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132200000" />
+    <option name="totallyTimeSpent" value="145712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.373444" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.036193028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4965422" weight="0.04249292" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69709545" visible="true" weight="0.23065902" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979253" weight="0.398017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69709545" visible="true" weight="0.35410765" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979253" weight="0.43909347" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -473,7 +518,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.041493777" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.02010724" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -482,56 +527,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="课程内容修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="课程内容修改" />
+    <MESSAGE value="杂七杂八，给小车添加的语音相关的功能" />
+    <MESSAGE value="修改输出显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改输出显示" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-          <folding>
-            <element signature="e#10#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/cat.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/pepper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/Gaussian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="e#18#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/canny_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/sobel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenCvPPT/gray.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -556,43 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/canny.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="25" selection-start-line="25" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="21" lean-forward="true" selection-end-line="47" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenCvPPT/match.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -606,45 +569,8 @@
     <entry file="file://$PROJECT_DIR$/OpenCvPPT/123.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/thuglife_cam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/playvideo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/st.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenCvPPT/sample.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenCvPPT/lk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenCvPPT/camshift.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -663,13 +589,6 @@
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/text81.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -694,39 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face/face.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face/facev2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676">
-          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flower/flower.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/animal/animal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1058">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,41 +712,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main815.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio/weather.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="78" column="77" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/car.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="55" column="72" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/youdao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="892">
           <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio/SpeechRecognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="87" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="87" />
         </state>
       </provider>
     </entry>
@@ -871,20 +726,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UsingVar.py">
+    <entry file="file://$PROJECT_DIR$/audio/SpeechRecognition.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="479" lean-forward="true" selection-start-line="479" selection-end-line="479" />
+          <caret line="23" column="87" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face/face.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face/facev2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flower/flower.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="45" selection-start-line="45" selection-end-line="51" selection-end-column="74" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <element signature="e#5804#7165#0" />
-            <element signature="e#7198#7447#0" />
-            <element signature="e#7483#8544#0" />
-            <element signature="e#8578#11084#0" />
-            <element signature="e#11122#11891#0" />
-            <element signature="e#11927#12987#0" />
-            <element signature="e#13020#14109#0" />
-            <element signature="e#13719#15131#0" />
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animal/animal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audio/weather.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/sobel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/canny_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/canny.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="25" selection-start-line="25" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/st.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="23" column="28" lean-forward="true" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/playvideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/lk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/match_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main1609.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="624" selection-start-line="624" selection-end-line="624" />
+          <folding>
+            <element signature="e#1#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/car.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1021">
+          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/idcard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main815.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="6" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenCvPPT/thuglife_cam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/text81.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsingVar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="111" column="46" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
+          <folding>
+            <element signature="e#6375#7825#0" />
+            <element signature="e#6375#6457#0" />
+            <element signature="e#6601#6628#0" />
+            <element signature="e#6929#7740#0" />
+            <element signature="e#7856#8107#0" />
+            <element signature="e#8141#9204#0" />
+            <element signature="e#9236#11843#0" />
+            <element signature="e#11879#14481#0" />
+            <element signature="e#14515#15577#0" />
+            <element signature="e#15608#16699#0" />
+            <element signature="e#16760#18172#0" />
+            <element signature="e#18205#18451#0" />
+            <element signature="e#18485#18927#0" />
+            <element signature="e#18963#19187#0" />
+            <element signature="e#20206#21300#0" />
           </folding>
         </state>
       </provider>
