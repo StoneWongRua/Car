@@ -35,11 +35,19 @@ class PlantRecognizer(object):
     def detect(self, img_path):
         f = open(img_path, 'rb')
         img_str = base64.b64encode(f.read())
-        params = {'image': img_str, 'with_face': 1}
+        params = {'image': img_str, 'baike_num': 1}
         tic = time.clock()
         rp_json = self.get_result(params)
         toc = time.clock()
         print('=> Cost time: ', toc - tic)
         result = rp_json['result']
-        print(result)
-        return str(result[0])
+        # print(result)
+
+        if str(result[0]['name']) == "非植物":
+            return "这并不是一棵植物\n" \
+                   + "--------------------------------------------------"
+        else:
+            return "植物名称：" + str(result[0]['name']) +\
+                    "\n百度百科：" + str ( result[0]['baike_info']['description'] ) + \
+                    "\n--------------------------------------------------"
+

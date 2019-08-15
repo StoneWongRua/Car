@@ -200,7 +200,10 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
                 img = fname
                 text81.detect(fname)
                 data = text81.detect(fname)
-                self.tt.append(str(data))
+                for i in data:
+                    for value in i.values ():
+                        self.tt.append(str(value))
+
                 index = 0
             if cv2.waitKey(50) & 0xFF == ord('q'):
                 break
@@ -310,7 +313,8 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
                                 gender = "女"
 
 
-                            self.tt.append("顾客" + chr(num) + "   性别: " + gender + " 年龄: " + str(face["age"]))
+                            self.tt.append("编号" + chr(num) + "   性别: " + gender + " 年龄: " + str(face["age"]))
+                            self.tt.append("\n--------------------------------------------------")
                             #self.tt.append("你点我啦！")
                             num = num + 1
 

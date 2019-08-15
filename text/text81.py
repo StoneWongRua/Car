@@ -37,6 +37,13 @@ def detect(path):
     # print('识别结果为: %s' % res_words)
     # pprint(result)
     # pprint(len(result['words_result']))
+    print(type(result['words_result'][0]))
+    print(result['words_result'])
+    print(result['words_result_num'])
+    for i in result['words_result']:
+        for value  in i.values():
+            print(value)
+
     return result['words_result']
 
 

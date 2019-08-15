@@ -1,7 +1,7 @@
 import cv2
 
-cap = cv2.VideoCapture('ball.avi')
-# cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture('ball.avi')
+cap = cv2.VideoCapture(0)
 index = 0
 imgname = 0
 # 用循环不断获取当前帧 处理后显示出来

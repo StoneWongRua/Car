@@ -36,14 +36,20 @@ class AnimalRecognizer(object):
     def detect(self, img_path):
         f = open(img_path, 'rb')
         img_str = base64.b64encode(f.read())
-        params = {'image': img_str, 'with_face': 1}
+        params = {'image': img_str, 'baike_num': 1}
         tic = time.clock()
         rp_json = self.get_result(params)
         toc = time.clock()
         print('=> Cost time: ', toc - tic)
         result = rp_json['result']
         print(result)
-        return str(result[0])
+        if str ( result[0]['name'] ) == "非动物":
+            return "这并不是动物\n" \
+                   + "--------------------------------------------------"
+        else:
+            return "动物名称：" + str ( result[0]['name'] ) + \
+                   "\n百度百科：" + str ( result[0]['baike_info']['description'] ) + \
+                   "\n--------------------------------------------------"
 
 def animal():
     recognizer = AnimalRecognizer(api_key='PtGR84MlaNQL6KLPeB73A4Xd', secret_key='Ze0KrGXEtyLykKAMbAn09xRWIfXsTjmc')

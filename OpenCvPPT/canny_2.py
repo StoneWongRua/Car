@@ -3,6 +3,9 @@ import cv2
 img = cv2.imread('desk.png', 1)
 cv2.namedWindow('window')
 
+def track_back(x):
+    pass
+
 # 创建滑动条
 cv2.createTrackbar('maxVal', 'window', 100, 255, track_back)
 cv2.createTrackbar('minVal', 'window', 200, 255, track_back)
