@@ -42,6 +42,7 @@ class CarRecognizer(object):
         print('=> Cost time: ', toc - tic)
         result = rp_json['result']
         print(result)
+
         if str(result[0]['name']) == "非车类":
             return "这并不是一台车\n" \
                    + "--------------------------------------------------"
