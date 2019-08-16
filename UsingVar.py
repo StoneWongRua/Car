@@ -5,6 +5,7 @@ import base64
 from PIL import Image
 
 from PyQt5 import  QtWidgets,QtGui,QtCore
+from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTextEdit
 import cv2
 import numpy as np
@@ -122,6 +123,8 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menu.menuAction())
         self.menubar.addAction(self.menuaudio.menuAction())
 
+        self.timer = QTimer ( self )
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -170,6 +173,7 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         self.IDCard.triggered.connect ( self.midcard )
 
         self._mutex = QtCore.QMutex ()
+
 
 
     def open(self):
@@ -522,36 +526,85 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
             cv2.line(im3,tuple(pts1_1[i]),tuple(pts2_new[i]),255,2)
         return im3
 
+    def ppp(self):
+        print(333)
 
     def maudio(self):
-        from audio import luyin
-
-        # path = luyin.luyin()
-        path = r"C:\Users\15845\Pictures\intel\audio\music\sample-files\16k.wav"
-        from audio import SpeechRecognition
         try:
-            self.tt.append ( SpeechRecognition.test ( path ) )
-            result = SpeechRecognition.test ( path )
-            return result
+            self.timer.start ( 1000 )
+            # 计时结束调用timeout_slot()方法,注意不要加（）
+            self.timer.ppp.connect ( self.timeout_slot )
+            self.tt.append ( "*  recording" )
+            import pyaudio
+            import wave
+
+            CHUNK = 1024
+            FORMAT = pyaudio.paInt16
+            CHANNELS = 1
+            RATE = 8000
+            RECORD_SECONDS = 3
+            WAVE_OUTPUT_FILENAME = "111.wav"
+
+            p = pyaudio.PyAudio ()
+
+            stream = p.open ( format=FORMAT,
+                              channels=CHANNELS,
+                              rate=RATE,
+                              input=True,
+                              frames_per_buffer=CHUNK )
+
+
+
+            frames = []
+
+            for i in range ( 0, int ( RATE / CHUNK * RECORD_SECONDS ) ):
+                data = stream.read ( CHUNK )
+                frames.append ( data )
+
+            self.tt.append ( "* done recording" )
+
+            stream.stop_stream ()
+            stream.close ()
+            p.terminate ()
+
+            wf = wave.open ( WAVE_OUTPUT_FILENAME, 'wb' )
+            wf.setnchannels ( CHANNELS )
+            wf.setsampwidth ( p.get_sample_size ( FORMAT ) )
+            wf.setframerate ( RATE )
+            wf.writeframes ( b''.join ( frames ) )
+            wf.close ()
+            # path = r"C:\Users\15845\Pictures\intel\output.wav"
+            from audio import SpeechRecognition
+            # self.tt.append ( SpeechRecognition.test ( WAVE_OUTPUT_FILENAME ) )
+            # result = SpeechRecognition.test ( WAVE_OUTPUT_FILENAME )
+            # return result
         except KeyError:
-            print ( "error" )
-            self.maudio()
+            self.tt.append ( "error, 请选择重新开始录音" )
+            # self.maudio()
         finally:
             print("finally")
 
 
     def mweather(self):
-        self._mutex.lock ()
+
+        # from audio import luyin
+        # self.tt.append ("开始录音")
+        # path = luyin.luyin()
+        # self.tt.append ("结束录音")
         from audio import weather
         # print(self.maudio())
         from audio import SpeechRecognition
-        path = r'C:\Users\15845\Pictures\intel\audio\music\sample-files\16k.wav'
+        path = r"C:\Users\15845\Pictures\intel\output.wav"
         result = SpeechRecognition.test ( path )
         if SpeechRecognition.weather(path):
-            self.tt.append ( weather.weather_analyse ( "auto_ip" ) )
-        else:
-            print('wrong')
-        self._mutex.unlock ()
+            try:
+                self.tt.append ( weather.weather_analyse ( "auto_ip" ) )
+            except KeyError:
+                self.tt.append ( "error, 重新开始录音" )
+                self.mweather()
+            finally:
+                print('wrong')
+
 
     def mtranslate(self):
         from audio import youdao

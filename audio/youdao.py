@@ -36,7 +36,7 @@ class youdao_fanyi(object):
         '''
         dict_data = self._pargmas_data()
         from audio import SpeechRecognition
-        path = r'C:\Users\15845\Pictures\intel\audio\music\sample-files\16k.wav'
+        path = r'C:\Users\15845\Pictures\intel\output.wav'
         text = SpeechRecognition.fanyi(path)
         dict_data['q'] = text
         result = requests.get(self.url, params=dict_data)

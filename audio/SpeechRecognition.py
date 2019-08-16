@@ -21,14 +21,11 @@ def get_file_content(filePath):
 def test(path):
    # 识别本地文件
     result = client.asr(get_file_content(path), 'wav', 16000, {'dev_pid': 1536, })
-    if result['result'][0] == None:
-       return "重新输入语音"
-    else:
-        return result['result'][0] + "\n--------------------------------------------------"
+    return result['result'][0] + "\n--------------------------------------------------"
 
 def weather(path):
     result = client.asr ( get_file_content ( path ), 'wav', 16000, {'dev_pid': 1536, } )
-    if result['result'][0].find("科技") != -1:
+    if result['result'][0].find("天气") != -1:
         print("111no")
         return True
     else:

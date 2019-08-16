@@ -9,7 +9,7 @@ def luyin():
     CHANNELS = 1
     RATE = 8000
     RECORD_SECONDS = 3
-    WAVE_OUTPUT_FILENAME = "output.wav"
+    WAVE_OUTPUT_FILENAME = "111.wav"
 
     p = pyaudio.PyAudio ()
 
