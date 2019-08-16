@@ -98,6 +98,9 @@ class Ui_MainWindow(object):
         self.Weather = QtWidgets.QAction(MainWindow)
         self.Weather.setObjectName("Weather")
 
+        self.weather = QtWidgets.QAction(MainWindow)
+        self.weather.setObjectName("weather")
+
         self.Translate = QtWidgets.QAction(MainWindow)
         self.Translate.setObjectName("Translate")
 
@@ -117,6 +120,7 @@ class Ui_MainWindow(object):
         self.menuaudio.addSeparator()
         self.menuaudio.addAction(self.Audio)
         self.menuaudio.addAction ( self.Weather )
+        self.menuaudio.addAction(self.weather)
         self.menuaudio.addAction ( self.Translate )
         self.menu.addAction(self.actionRecognize)
         self.menubar.addAction(self.menuopen.menuAction())
@@ -145,7 +149,8 @@ class Ui_MainWindow(object):
         self.openpng.setText(_translate("MainWindow", "png"))
         self.opentif.setText(_translate("MainWindow", "tif"))
         self.Audio.setText(_translate("MainWindow", "语音转文字"))
-        self.Weather.setText(_translate("MainWindow", "天气预报"))
+        self.Weather.setText(_translate("MainWindow", "语音天气预报"))
+        self.weather.setText(_translate("MainWindow", "天气预报"))
         self.Translate.setText ( _translate ( "MainWindow", "语音翻译" ) )
         self.OpenImage.setText(_translate("MainWindow", "文本识别"))
         self.IDCard.setText ( _translate ( "MainWindow", "身份证识别" ) )
@@ -170,6 +175,7 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
         self.Car.triggered.connect(self.mcar)
         self.Audio.triggered.connect(self.maudio)
         self.Weather.triggered.connect(self.mweather)
+        self.weather.triggered.connect(self.nweather)
         self.Translate.triggered.connect(self.mtranslate)
         self.IDCard.triggered.connect ( self.midcard )
 
@@ -611,6 +617,9 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
             finally:
                 print('wrong')
 
+    def nweather(self):
+        from audio import weather
+        self.tt.append ( weather.weather_analyse ( "auto_ip" ) )
 
     def mtranslate(self):
         try:
