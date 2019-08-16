@@ -613,11 +613,17 @@ class mywindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
 
     def mtranslate(self):
-        from audio import youdao
-        app_key_data = {'key': '61555165', 'keyfrom': 'pythoncontent1111'}
-        m = youdao.youdao_fanyi ( app_key_data )
-        m.analysis_json ()
-        self.tt.append (str(m.analysis_json ()))
+        try:
+            from audio import youdao
+            app_key_data = {'key': '61555165', 'keyfrom': 'pythoncontent1111'}
+            m = youdao.youdao_fanyi ( app_key_data )
+            m.analysis_json ()
+            self.tt.append ( str ( m.analysis_json () ) )
+        except KeyError:
+            self.tt.append("record error")
+        finally:
+            print("finally")
+
 
 
 
