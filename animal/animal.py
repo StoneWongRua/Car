@@ -46,6 +46,9 @@ class AnimalRecognizer(object):
         if str ( result[0]['name'] ) == "非动物":
             return "这并不是动物\n" \
                    + "--------------------------------------------------"
+        elif str ( result[0]['baike_info']['description'] ) == None:
+            return "动物名称：" + str ( result[0]['name'] ) + \
+                   "\n--------------------------------------------------"
         else:
             return "动物名称：" + str ( result[0]['name'] ) + \
                    "\n百度百科：" + str ( result[0]['baike_info']['description'] ) + \

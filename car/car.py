@@ -53,6 +53,10 @@ class CarRecognizer(object):
                    "\n车型名称：" + str ( result[0]['name'] ) +\
                     "\n百度百科：" + str ( result[0]['baike_info']['description'] ) +\
                     "\n--------------------------------------------------"
+        elif str ( result[0]['baike_info']['description'] ) == None:
+            return "年份信息：" + str(result[0]['year']) +\
+                   "\n车型名称：" + str ( result[0]['name'] ) + \
+                   "\n--------------------------------------------------"
         else:
             return"年份信息：" + str(result[0]['year']) +\
                    "\n车型名称：" + str ( result[0]['name'] ) +\

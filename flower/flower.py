@@ -46,6 +46,9 @@ class PlantRecognizer(object):
         if str(result[0]['name']) == "非植物":
             return "这并不是一棵植物\n" \
                    + "--------------------------------------------------"
+        elif str ( result[0]['baike_info']['description'] ) == None:
+            return "植物名称：" + str(result[0]['name'])  + \
+                   "\n--------------------------------------------------"
         else:
             return "植物名称：" + str(result[0]['name']) +\
                     "\n百度百科：" + str ( result[0]['baike_info']['description'] ) + \
