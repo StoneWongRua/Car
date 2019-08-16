@@ -42,27 +42,26 @@ class CarRecognizer(object):
         print('=> Cost time: ', toc - tic)
         result = rp_json['result']
         print(result)
-
-        if str(result[0]['name']) == "非车类":
-            return "这并不是一台车\n" \
-                   + "--------------------------------------------------"
-        if str(result[0]['year']) == "无年份信息":
-            # return "这是" + str ( result[0]['name'] ) + "吗？" + "听说" + str (
-            #             #     result[0]['baike_info']['description'] ) + "\n"\
-            return "年份信息：无" + \
-                   "\n车型名称：" + str ( result[0]['name'] ) +\
-                    "\n百度百科：" + str ( result[0]['baike_info']['description'] ) +\
+        try:
+            if str(result[0]['name']) == "非车类":
+                return "这并不是一台车\n" \
+                       + "--------------------------------------------------"
+            if str(result[0]['year']) == "无年份信息":
+                # return "这是" + str ( result[0]['name'] ) + "吗？" + "听说" + str (
+                #             #     result[0]['baike_info']['description'] ) + "\n"\
+                return "年份信息：无" + \
+                       "\n车型名称：" + str ( result[0]['name'] ) +\
+                        "\n百度百科：" + str ( result[0]['baike_info']['description'] ) +\
+                        "\n--------------------------------------------------"
+            else:
+                return"年份信息：" + str(result[0]['year']) +\
+                       "\n车型名称：" + str ( result[0]['name'] ) +\
+                        "\n百度百科：" + str ( result[0]['baike_info']['description'] ) + \
+                        "\n--------------------------------------------------"
+        except KeyError:
+            return "年份信息：" + str ( result[0]['year'] ) + \
+                   "\n车型名称：" + str ( result[0]['name'] )+ \
                     "\n--------------------------------------------------"
-        elif str ( result[0]['baike_info']['description'] ) == None:
-            return "年份信息：" + str(result[0]['year']) +\
-                   "\n车型名称：" + str ( result[0]['name'] ) + \
-                   "\n--------------------------------------------------"
-        else:
-            return"年份信息：" + str(result[0]['year']) +\
-                   "\n车型名称：" + str ( result[0]['name'] ) +\
-                    "\n百度百科：" + str ( result[0]['baike_info']['description'] ) + \
-                    "\n--------------------------------------------------"
-
 
 if __name__ == '__main__':
     print(CarRecognizer.detect(img_path="car.jpg"))

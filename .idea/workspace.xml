@@ -8,6 +8,7 @@
     <list default="true" id="2cefae68-5fbe-4d50-87a3-0407d7db3c8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animal/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/animal/animal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/car.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/car.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flower/flower.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower/flower.py" afterDir="false" />
     </list>
@@ -23,7 +24,7 @@
     <SUITE FILE_PATH="coverage/intel$idcard.coverage" NAME="idcard Coverage Results" MODIFIED="1565858161816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text" />
     <SUITE FILE_PATH="coverage/intel$816thread.coverage" NAME="816thread Coverage Results" MODIFIED="1565918103029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$numpy.coverage" NAME="numpy Coverage Results" MODIFIED="1565665191417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
-    <SUITE FILE_PATH="coverage/intel$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1565926923071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/intel$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1565935030975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/intel$pedestrain_video.coverage" NAME="pedestrain_video Coverage Results" MODIFIED="1565256586483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
     <SUITE FILE_PATH="coverage/intel$facev2.coverage" NAME="facev2 Coverage Results" MODIFIED="1564592122104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face" />
     <SUITE FILE_PATH="coverage/intel$match_5.coverage" NAME="match_5 Coverage Results" MODIFIED="1565853189218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OpenCvPPT" />
@@ -94,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2344">
-              <caret line="624" column="26" selection-start-line="624" selection-start-column="26" selection-end-line="624" selection-end-column="26" />
+            <state relative-caret-position="275">
+              <caret line="484" lean-forward="true" selection-start-line="484" selection-end-line="484" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
                 <element signature="e#6714#8164#0" />
@@ -105,7 +106,6 @@
                 <element signature="e#12218#14820#0" />
                 <element signature="e#13356#13928#0" />
                 <element signature="e#14854#15916#0" />
-                <element signature="e#15947#17038#0" />
                 <element signature="e#17099#18511#0" />
                 <element signature="e#20358#20997#0" />
                 <element signature="e#21293#22602#0" />
@@ -117,8 +117,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/car.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="55" selection-start-line="55" selection-end-line="58" selection-end-column="73" />
+            <state relative-caret-position="292">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flower/flower.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/animal/animal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -127,12 +151,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flower/flower.py">
+        <entry file="file://$PROJECT_DIR$/text/idcard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+            <state relative-caret-position="18">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="47" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,7 +277,6 @@
         <option value="$PROJECT_DIR$/OpenCvPPT/playvideo.py" />
         <option value="$PROJECT_DIR$/text/text81.py" />
         <option value="$PROJECT_DIR$/main1609.py" />
-        <option value="$PROJECT_DIR$/text/idcard.py" />
         <option value="$PROJECT_DIR$/luyin.py" />
         <option value="$PROJECT_DIR$/audio/youdao.py" />
         <option value="$PROJECT_DIR$/audio/SpeechRecognition.py" />
@@ -263,9 +286,10 @@
         <option value="$PROJECT_DIR$/main815.py" />
         <option value="$PROJECT_DIR$/audio/record.py" />
         <option value="$PROJECT_DIR$/helloworld.py" />
-        <option value="$PROJECT_DIR$/animal/animal.py" />
         <option value="$PROJECT_DIR$/car/car.py" />
         <option value="$PROJECT_DIR$/flower/flower.py" />
+        <option value="$PROJECT_DIR$/animal/animal.py" />
+        <option value="$PROJECT_DIR$/text/idcard.py" />
       </list>
     </option>
   </component>
@@ -291,12 +315,22 @@
             <path>
               <item name="intel" type="b2602c69:ProjectViewProjectNode" />
               <item name="intel" type="462c0819:PsiDirectoryNode" />
+              <item name="animal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intel" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intel" type="b2602c69:ProjectViewProjectNode" />
               <item name="intel" type="462c0819:PsiDirectoryNode" />
               <item name="flower" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intel" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -473,7 +507,7 @@
       <workItem from="1565250607193" duration="28802000" />
       <workItem from="1565572498930" duration="37787000" />
       <workItem from="1565742688991" duration="59010000" />
-      <workItem from="1565915959627" duration="8635000" />
+      <workItem from="1565915959627" duration="9891000" />
     </task>
     <task id="LOCAL-00001" summary="课程内容修改">
       <created>1565656940332</created>
@@ -538,23 +572,30 @@
       <option name="project" value="LOCAL" />
       <updated>1565925068254</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="录音">
+      <created>1565926967881</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565926967881</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161288000" />
+    <option name="totallyTimeSpent" value="162544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14812332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14812332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4965422" weight="0.04249292" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69709545" weight="0.4220963" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979253" visible="true" weight="0.34844193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69709545" visible="true" weight="0.5283286" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979253" weight="0.36402267" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -797,16 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text/idcard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/luyin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -880,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audio/SpeechRecognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/audio/luyin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
@@ -921,20 +945,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animal/animal.py">
+    <entry file="file://$PROJECT_DIR$/audio/SpeechRecognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="48" selection-start-line="48" selection-end-line="50" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2344">
-          <caret line="624" column="26" selection-start-line="624" selection-start-column="26" selection-end-line="624" selection-end-column="26" />
+        <state relative-caret-position="275">
+          <caret line="484" lean-forward="true" selection-start-line="484" selection-end-line="484" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
             <element signature="e#6714#8164#0" />
@@ -944,7 +965,6 @@
             <element signature="e#12218#14820#0" />
             <element signature="e#13356#13928#0" />
             <element signature="e#14854#15916#0" />
-            <element signature="e#15947#17038#0" />
             <element signature="e#17099#18511#0" />
             <element signature="e#20358#20997#0" />
             <element signature="e#21293#22602#0" />
@@ -954,8 +974,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/car/car.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="55" selection-start-line="55" selection-end-line="58" selection-end-column="73" />
+        <state relative-caret-position="292">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -964,10 +984,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flower/flower.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+        <state relative-caret-position="284">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animal/animal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/idcard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
